@@ -1,43 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rev_print.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luman <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/22 22:46:24 by luman             #+#    #+#             */
-/*   Updated: 2018/02/22 23:23:06 by luman            ###   ########.fr       */
+/*   Created: 2018/02/22 20:54:46 by luman             #+#    #+#             */
+/*   Updated: 2018/02/22 20:59:00 by luman            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
-int	main(int argc, char **argv)
+char	*ft_strcpy(char *s1, char *s2)
 {
 	int i;
 
 	i = 0;
-	if (argc != 2)
+	while(s2[i] != '\0')
 	{
-		ft_putchar('\n');
-		return (0);
+		s1[i] = s2[i];
+		i++;
 	}
-	else
-		while (argv[1][i] != '\0')
-		{
-			i++;
-		}
-		i = i -1;
-		while (i >= 0)
-		{
-			ft_putchar(argv[1][i]);
-			i--;			
-		}
-		ft_putchar('\n');
-		return (0);
+	s1[i] = '\0';
+	return (s1);
 }

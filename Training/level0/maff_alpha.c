@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: luman <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/22 07:29:09 by luman             #+#    #+#             */
-/*   Updated: 2018/02/22 07:34:03 by luman            ###   ########.fr       */
+/*   Created: 2018/02/22 19:53:38 by luman             #+#    #+#             */
+/*   Updated: 2018/02/22 20:00:02 by luman            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-int	main(void)
+int		main(void)
 {
-	char a;
-	char b;
+	int a;
+	int b;
 
 	a = 'a';
 	b = 'B';

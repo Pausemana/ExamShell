@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: luman <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/22 07:46:05 by luman             #+#    #+#             */
-/*   Updated: 2018/02/22 07:52:05 by luman            ###   ########.fr       */
+/*   Created: 2018/02/22 20:11:00 by luman             #+#    #+#             */
+/*   Updated: 2018/02/22 20:17:07 by luman            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ void	ft_putstr(char *str)
 		i++;
 	}
 }
-int	main(int argc, char **argv)
+
+int 	main(int argc, char **argv)
 {
 	if (argc < 2)
 	{
@@ -38,6 +39,7 @@ int	main(int argc, char **argv)
 	else
 	{
 		ft_putstr(argv[argc - 1]);
-	return (0);
+		ft_putchar('\n');
 	}
+	return (0);
 }
